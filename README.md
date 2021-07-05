@@ -1,6 +1,10 @@
 
 #First Step: 
-https://user-images.githubusercontent.com/51680972/124488512-39e19600-ddb0-11eb-85d0-486425d14d4a.mp4
+
+
+https://user-images.githubusercontent.com/51680972/124488645-5ed60900-ddb0-11eb-9cf0-8077b87ec292.mp4
+
+
 
 # verinaVital
 
