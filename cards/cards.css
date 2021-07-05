@@ -14,9 +14,9 @@ body{
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-  
-}
 
+   
+}
 
 header{
    
@@ -171,6 +171,7 @@ header .toggle{
     border-radius: 60%;
     box-shadow: -10px -10px 5px black;
     margin: 10px;
+    cursor: pointer;
 }
 .container .box .content img:hover{
     transition: transform .5s ease;

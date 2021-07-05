@@ -152,6 +152,8 @@ section .content h2 span a {
 section .content:hover h2 span a{
      text-transform: lowercase;
      transition: 0.5s;
+     color: white;
+     background-color: #111;
 }
 
 

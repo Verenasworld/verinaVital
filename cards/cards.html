@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Shop Overview</title>
+        <title></title>
         <link rel="stylesheet" href="cards.css">
     </head>
     <body>
         <section>
             <header>
                 <a href="../index.html" class="logo">VerinaVital</a>
-                <div class="toggle"onclick="menuToggle()"></div>
+               
             </header>
         </section>
        
@@ -17,11 +17,11 @@
             <div class="box">
                 <span></span>
                 <div class="content">
-                    <img src="../media/yogigirl-drawing.png" alt="handstand-girl-drawing">
+                    <img src="../media/yogigirl-drawing.png" alt="handstand-girl-drawing" onclick="linkto()">
                     <h2>MY BLOG</h2>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
                     </p>
-                    <a scr="index.html">read more</a>
+                    <a href="index.html">read more</a>
                 </div>
             </div>
             <div class="box">
@@ -67,23 +67,7 @@
         </div>
 
 
-        <div>
-            <ul>
-                <li>verina</li>
-                <li>blog</li>
-                <li>shop</li>
-                <li>contact</li>
-            </ul>
-        </div>
+     
 
-        <script type="text/javascript">
-            function menuToggle(){
-              const toggleMenu = document.querySelector('.toggle');
-              const section = document.querySelector('section');
-              toggleMenu.classList.toggle('active');
-              section.classList.toggle('active');
-            }
-              
-            </script>
     </body>
 </html>
