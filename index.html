@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VerinaVital</title>
+  <link rel="stylesheet" href="index.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="/your-path-to-fontawesome/css/fontawesome.css" rel="stylesheet">
+<body>
+<section>
+    <header>
+        <a href="#" class="logo">VerinaVital</a>
+        <div class="toggle"onclick="menuToggle()"></div>
+    </header>
+    <div class="glass"></div>
+    <div class="content">
+      <h2>Happiness..<br><span><a href="./cards/cards.html">Let Yoga in your Heart!</a></span></h2>
+      
+    </div>
+    <video src="media/Meditation - 47799.mp4" autoplay muted loop></video>
+
+
+
+
+    
+  <div class="socialMedia">
+    <ul class="smi">
+      <li data-text="github"  style="--i:1">
+        <a href="https://github.com/Verenasworld">
+            <i class="fa fa-github"></i>
+        </a>
+      </li>
+      <li data-text="instagram"  style="--i:2">
+        <a href="#">
+          <i class="fa fa-instagram"></i>
+        </a>
+      </li>
+      <li data-text="Shop"  style="--i:3">
+        <a href="#">
+          <i class="fa fa-shopping-cart"></i>
+        </a></li>
+    </ul>
+  </div>
+  
+
+
+
+
+    <ul class="navi">
+      <li style="--i:1"> <a href="index.html">Verina</a></li>
+      <li style="--i:2"> <a href="nature.html">Blog</a></li>
+      <li style="--i:3"> <a href="summer.html">Shop</a></li>
+      <li style="--i:4"> <a href="party.html">Contact</a></li>
+
+    </ul>
+
+</section>
+
+
+<script src="smi-tilt.js"></script>
+
+<script type="text/javascript">
+function menuToggle(){
+  const toggleMenu = document.querySelector('.toggle');
+  const section = document.querySelector('section');
+  toggleMenu.classList.toggle('active');
+  section.classList.toggle('active');
+}
+  
+</script>
+
+<script>
+  VanillaTilt.init(document.querySelectorAll(" .smi li a"), {
+	  max: 20,
+	  speed: 400,
+    glare: true,
+    "max-glare":1,
+	});
+  let list = document.querySelectorAll('.smi li');
+  let bg = document.querySelector('.socialMedia');
+  list.forEach(elements => {
+    elements.addEventListener('mouseenter' , function (event){
+      let color = event.target.getAttribute('data-color');
+      bg.style.backgroundColor = color;
+    })
+  })
+
+</script>
+
+</body>
+</html>

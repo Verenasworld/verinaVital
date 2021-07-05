@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Shop Overview</title>
+        <link rel="stylesheet" href="cards.css">
+    </head>
+    <body>
+        <section>
+            <header>
+                <a href="../index.html" class="logo">VerinaVital</a>
+                <div class="toggle"onclick="menuToggle()"></div>
+            </header>
+        </section>
+       
+
+        <div class="container">
+            <div class="box">
+                <span></span>
+                <div class="content">
+                    <img src="../media/yogigirl-drawing.png" alt="handstand-girl-drawing">
+                    <h2>MY BLOG</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    </p>
+                    <a scr="index.html">read more</a>
+                </div>
+            </div>
+            <div class="box">
+                <span></span>
+                <div class="content">
+                    <img src="../media/yogagirl.png" alt="">
+                    <h2>MY SHOP</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    </p>
+                    <a href="index.html">shop Now</a>
+                </div>
+            </div>
+            <div class="box">
+                <span></span>
+                <div class="content">
+                    <img src="../media/yogagirl-drawing1.png" alt="">
+                    <h2>ABOUT ME</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    </p>
+                    <a href="index.html">thats me</a>
+                </div>
+            </div>
+         
+           
+
+            <div class="box">
+                <span></span>
+                <div class="content">
+                   <div class="back">
+                    <div class="circle">
+                    <div></div>
+                     <div></div>
+                     <div></div>
+                     <div></div>
+                     
+                 </div></div>
+                    <h2>Want More?</h2>
+                
+                  
+                    <a href="https://github.com/Verenasworld">this way ...</a>
+                </div>
+            </div>
+        </div>
+
+
+        <div>
+            <ul>
+                <li>verina</li>
+                <li>blog</li>
+                <li>shop</li>
+                <li>contact</li>
+            </ul>
+        </div>
+
+        <script type="text/javascript">
+            function menuToggle(){
+              const toggleMenu = document.querySelector('.toggle');
+              const section = document.querySelector('section');
+              toggleMenu.classList.toggle('active');
+              section.classList.toggle('active');
+            }
+              
+            </script>
+    </body>
+</html>
