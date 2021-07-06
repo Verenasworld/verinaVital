@@ -19,6 +19,7 @@ body{
     background-image: url(../media/sky-3154857_1920.jpg);
     background-size: cover;
     background-repeat: no-repeat;
+    margin: auto;
 
    
 }
@@ -49,34 +50,7 @@ header .logo{
    
    
 }
-header .toggle{
- 
-    position: relative;
-   
-    width: 80px;
-    height: 80px;
-    background: url(../media/menu.png);
-    background-position: center;
-    background-repeat: no-repeat;
-    cursor: pointer;
-    background-size: 45px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 10000;
-    background-color: black;
-    
-   }
-   header .toggle.active{
-       background: url(../media/close.png);
-       background-position: center;
-       background-repeat: no-repeat;
-       cursor: pointer;
-       background-size: 45px;
-       z-index: 999;
-       background-color: black;
-   }
-   
+
 
 
 .container{
