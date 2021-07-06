@@ -14,10 +14,12 @@ body{
     justify-content: center;
     align-items: center;
     min-height: 100vh;
+   
 
-    /*background-image: url(../media/sky-3154857_1920.jpg);
+    background-image: url(../media/sky-3154857_1920.jpg);
     background-size: cover;
-    background-repeat: no-repeat;*/
+    background-repeat: no-repeat;
+    margin: auto;
 
    
 }
@@ -39,7 +41,7 @@ header .logo{
     font-family: 'Dancing Script', cursive;
     position: relative;
     font-size: 4em;
-    color: black;
+    color: white;
 
     font-weight: 700;
     text-decoration: none;
@@ -48,34 +50,7 @@ header .logo{
    
    
 }
-header .toggle{
- 
-    position: relative;
-   
-    width: 80px;
-    height: 80px;
-    background: url(../media/menu.png);
-    background-position: center;
-    background-repeat: no-repeat;
-    cursor: pointer;
-    background-size: 45px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 10000;
-    background-color: black;
-    
-   }
-   header .toggle.active{
-       background: url(../media/close.png);
-       background-position: center;
-       background-repeat: no-repeat;
-       cursor: pointer;
-       background-size: 45px;
-       z-index: 999;
-       background-color: black;
-   }
-   
+
 
 
 .container{
@@ -85,6 +60,7 @@ header .toggle{
     align-items: center;
     flex-wrap: wrap;
     padding: 40px 0;
+    
 }
 
 .container .box{
@@ -92,17 +68,20 @@ header .toggle{
     width: 500px;
     height: 650px;
     color: #000;
-    background-color:rgba(255,255,255, 0.5);
-    backdrop-filter: blur(10%);
+    background-color:white;
+  
     display: flex;
     justify-content: center;
     align-items: center;
     margin: 30px 30px;
     transition: 0.5s;
+    opacity: 0.7;
+   
     
 }
 .container .box:hover{
     transform: translateY(-40px);
+    opacity: 1;
 }
 .container .box::before{
     content: '';
@@ -120,8 +99,8 @@ header .toggle{
     left: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(300deg,#00d9ff,#ff0058);
-    filter: blur(30px);
+    background: linear-gradient(300deg,#00d9ff,#ff00d4);
+    filter: blur(20px);
 }
 .container .box:nth-child(2):before,
 .container .box:nth-child(2):after{
@@ -130,11 +109,11 @@ header .toggle{
 
 .container .box:nth-child(3):before,
 .container .box:nth-child(3):after{
-    background: linear-gradient(45deg,#ff00dd,#7a05ff);
+    background: linear-gradient(45deg,#ff00dd,#0586ff);
 }
 .container .box:nth-child(4):before,
 .container .box:nth-child(4):after{
-    background: linear-gradient(45deg,#00ff6a,#0509ff);
+    background: linear-gradient(45deg,#6aeeff,#0509ff);
 }
 .container .box:nth-child(6):before,
 .container .box:nth-child(6):after{
@@ -146,7 +125,7 @@ header .toggle{
     left: 6px;
     right: 6px;
     bottom: 6px;
-    background: rgba(255, 255, 255, 0.8);
+    background: rgba(255, 255, 255, 0.9);
     z-index: 2;
 }
 .container .box span::before{
@@ -174,11 +153,12 @@ header .toggle{
     width: 60%;
     height: 60%;
     border-radius: 60%;
-    border: 1px solid;
+  
     box-shadow: -10px -10px 5px black;
    margin-left: 50px;
     margin-bottom: 20px;
     cursor: pointer;
+    
 }
 .container .box .content img:hover{
     transition: transform 1.5s ease-in-out;
@@ -190,7 +170,8 @@ header .toggle{
     font-family: 'Syne', sans-serif;
     font-weight: 700;
     font-size: 2em;
-    margin-bottom: 10px;
+    margin: 15px 0;
+
 }
 
 .container .box .content{
@@ -198,6 +179,7 @@ header .toggle{
     letter-spacing: 1.5px;
     margin-bottom: 10px;
     font-weight: 300;
+    margin: 10px 0;
 }
 
 .container .box .content .container1{
@@ -210,11 +192,12 @@ header .toggle{
     display: flex;
     margin: 10px 0;
     padding: 10px 10px ;
-    background: linear-gradient(#ff97dc 0%, rgb(255, 195, 235) 10%, rgb(255, 233, 250));
+    background: linear-gradient(#bfe1f5 0%, #bfe1f5 5%, #bfe1f5 10%);
     border-radius: 8px;
     overflow: hidden;
     border: 1px solid white;
     transition: 0.5s;
+  
 }
 .container .box .content .container1:hover .skills{
     opacity: 0.1;
@@ -231,7 +214,8 @@ header .toggle{
     left: 0;
     width: 100%;
     height: 50%;
-    background: rgba(255, 255, 255, 0.8);
+    background: rgba(255, 255, 255, 0.7);
+  
 }
 
 .container .box .content .container1 .skills .name{
@@ -240,6 +224,7 @@ header .toggle{
     text-align: right;
    margin-top: 3px;
     text-transform: uppercase;
+   
 }
 
 .container .box .content .container1 .skills .value{
@@ -254,7 +239,7 @@ header .toggle{
     width: 100%;
     height: 20px; 
     border-radius: 10px;
-    background:#f8aade;
+    background:#aadbf8;
  
     margin: 5px 10px 0 10px;
     box-shadow: inset 0 0 5px white;
