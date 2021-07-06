@@ -15,6 +15,10 @@ body{
     align-items: center;
     min-height: 100vh;
 
+    /*background-image: url(../media/sky-3154857_1920.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;*/
+
    
 }
 
@@ -85,15 +89,17 @@ header .toggle{
 
 .container .box{
    position: relative;
-    width: 320px;
-    height: 400px;
+    width: 500px;
+    height: 650px;
     color: #000;
-    background-color:rgba(255,255,255,0.1);
+    background-color:rgba(255,255,255, 0.5);
+    backdrop-filter: blur(10%);
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 20px 30px;
+    margin: 30px 30px;
     transition: 0.5s;
+    
 }
 .container .box:hover{
     transform: translateY(-40px);
@@ -119,18 +125,15 @@ header .toggle{
 }
 .container .box:nth-child(2):before,
 .container .box:nth-child(2):after{
-    background: linear-gradient(315deg,#ff0058,#ffbc00);
+    background: linear-gradient(315deg,#1100ff,#0ec8e0);
 }
+
 .container .box:nth-child(3):before,
 .container .box:nth-child(3):after{
-    background: linear-gradient(45deg,#ffbc00,#05ff50);
+    background: linear-gradient(45deg,#ff00dd,#7a05ff);
 }
 .container .box:nth-child(4):before,
 .container .box:nth-child(4):after{
-    background: linear-gradient(45deg,#ff00dd,#7a05ff);
-}
-.container .box:nth-child(5):before,
-.container .box:nth-child(5):after{
     background: linear-gradient(45deg,#00ff6a,#0509ff);
 }
 .container .box:nth-child(6):before,
@@ -143,7 +146,7 @@ header .toggle{
     left: 6px;
     right: 6px;
     bottom: 6px;
-    background: rgb(255, 255, 255);
+    background: rgba(255, 255, 255, 0.8);
     z-index: 2;
 }
 .container .box span::before{
@@ -158,6 +161,8 @@ header .toggle{
     pointer-events: none;
 }
 
+
+
 .container .box .content{
     position: relative;
     z-index: 18;
@@ -166,16 +171,18 @@ header .toggle{
 
 .container .box .content img{
     position: relative;
-    width: 80%;
-    height: 80%;
+    width: 60%;
+    height: 60%;
     border-radius: 60%;
+    border: 1px solid;
     box-shadow: -10px -10px 5px black;
-    margin: 10px;
+   margin-left: 50px;
+    margin-bottom: 20px;
     cursor: pointer;
 }
 .container .box .content img:hover{
-    transition: transform .5s ease;
-    transform: scale(1.2);
+    transition: transform 1.5s ease-in-out;
+    transform: scale(1.1);
     
 }
 
@@ -186,12 +193,100 @@ header .toggle{
     margin-bottom: 10px;
 }
 
-.container .box .content p{
+.container .box .content{
     line-height: 1.5em;
     letter-spacing: 1.5px;
     margin-bottom: 10px;
     font-weight: 300;
 }
+
+.container .box .content .container1{
+    position: relative;
+    opacity: 1;
+}
+
+.container .box .content .container1 .skills{
+    position: relative;
+    display: flex;
+    margin: 10px 0;
+    padding: 10px 10px ;
+    background: linear-gradient(#ff97dc 0%, rgb(255, 195, 235) 10%, rgb(255, 233, 250));
+    border-radius: 8px;
+    overflow: hidden;
+    border: 1px solid white;
+    transition: 0.5s;
+}
+.container .box .content .container1:hover .skills{
+    opacity: 0.1;
+}
+.container .box .content .container1 .skills:hover{
+    opacity: 1;
+    transform: scale(1.1);
+}
+
+.container .box .content .container1 .skills::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 50%;
+    background: rgba(255, 255, 255, 0.8);
+}
+
+.container .box .content .container1 .skills .name{
+
+    position: relative;
+    text-align: right;
+   margin-top: 3px;
+    text-transform: uppercase;
+}
+
+.container .box .content .container1 .skills .value{
+    position: relative;
+    text-align: left;
+    margin-top: 3px;
+  
+    
+}
+.container .box .content .container1 .skills .percent{
+    position: relative;
+    width: 100%;
+    height: 20px; 
+    border-radius: 10px;
+    background:#f8aade;
+ 
+    margin: 5px 10px 0 10px;
+    box-shadow: inset 0 0 5px white;
+}
+
+.container .box .content .container1 .skills .percent .progress{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 70%;
+    height: 100%;
+    border-radius: 10px;
+    background: white;
+    box-shadow: inset 0 0 2px white;
+    animation: skilli 2s ease-in-out forwards;
+}
+
+@keyframes skilli {
+    from{
+        width: 0;
+    }
+}
+.container .box .content .container1 .skills:nth-child(1) .percent .progress{
+    background: linear-gradient(45deg, #36e8ff, #f54dc2);
+    }
+
+.container .box .content .container1 .skills:nth-child(2) .percent .progress{
+background: linear-gradient(45deg, #1fe6ff, #673AB7);
+}
+.container .box .content .container1 .skills:nth-child(3) .percent .progress{
+    background: linear-gradient(45deg, #ff8df0, #673AB7);
+    }
 
 .container .box .content a{
     display: inline-block;
@@ -215,7 +310,7 @@ header .toggle{
     position: relative;
     width: 100px;
     height: 100px;
-    background: linear-gradient(#33ccff,#ff0066,#7a05ff,#b3ff00);
+    background: linear-gradient(#66d9ff,#f8478e, #9d48ff);
     border-radius: 50%;
     animation: animate 0.8s linear infinite;
 }
@@ -246,7 +341,7 @@ header .toggle{
     position: absolute;
     width: 100%;
     height: 100%;
-    background: linear-gradient(#33ccff,#ff0066,#7a05ff,#b3ff00);
+    background: linear-gradient(#66d9ff,#f8478e, #9d48ff);
     border-radius: 50%;
 }
 
