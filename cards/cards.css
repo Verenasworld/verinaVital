@@ -16,9 +16,9 @@ body{
     min-height: 100vh;
    
 
-    /*background-image: url(../media/sky-3154857_1920.jpg);
+    background-image: url(../media/sky-3154857_1920.jpg);
     background-size: cover;
-    background-repeat: no-repeat;*/
+    background-repeat: no-repeat;
 
    
 }
@@ -40,7 +40,7 @@ header .logo{
     font-family: 'Dancing Script', cursive;
     position: relative;
     font-size: 4em;
-    color: black;
+    color: white;
 
     font-weight: 700;
     text-decoration: none;
@@ -86,6 +86,7 @@ header .toggle{
     align-items: center;
     flex-wrap: wrap;
     padding: 40px 0;
+    
 }
 
 .container .box{
@@ -100,10 +101,13 @@ header .toggle{
     align-items: center;
     margin: 30px 30px;
     transition: 0.5s;
+    opacity: 0.7;
+   
     
 }
 .container .box:hover{
     transform: translateY(-40px);
+    opacity: 1;
 }
 .container .box::before{
     content: '';
@@ -193,6 +197,7 @@ header .toggle{
     font-weight: 700;
     font-size: 2em;
     margin: 15px 0;
+
 }
 
 .container .box .content{
