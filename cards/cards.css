@@ -85,8 +85,8 @@ header .toggle{
 
 .container .box{
    position: relative;
-    width: 320px;
-    height: 400px;
+    width: 400px;
+    height: 500px;
     color: #000;
     background-color:rgba(255,255,255,0.1);
     display: flex;
@@ -158,6 +158,8 @@ header .toggle{
     pointer-events: none;
 }
 
+
+
 .container .box .content{
     position: relative;
     z-index: 18;
@@ -186,11 +188,23 @@ header .toggle{
     margin-bottom: 10px;
 }
 
-.container .box .content p{
+.container .box .content{
     line-height: 1.5em;
     letter-spacing: 1.5px;
     margin-bottom: 10px;
     font-weight: 300;
+}
+
+.container .box .content .container1{
+    position: relative;
+}
+
+.container .box .content .container1 .skills{
+    position: relative;
+    display: flex;
+    margin: 20px 0;
+    padding: 24px 10px 18px;
+    background: linear-gradient(#ff97dc 0%, rgb(255, 195, 235) 10%, rgb(255, 233, 250));
 }
 
 .container .box .content a{
