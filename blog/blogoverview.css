@@ -21,6 +21,31 @@
     align-items: center;
 
 }
+header{
+   
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 40px 100px;
+  
+ 
+  
+
+}
+
+header .logo{
+  font-family: 'Dancing Script', cursive;
+  position: relative;
+  font-size: 4em;
+  color: white;
+
+  font-weight: 700;
+  text-decoration: none;
+  text-shadow: 2px 2px 0 rgba(0,0,0,0.1);
+  transition: 0.5s;
+ 
+ 
+}
 .container{
 
   position: relative;
@@ -44,7 +69,7 @@
   display: flex;
   flex-direction: column;
   box-shadow: 0 5px 20px rgba(0,0,0,0.5);
-  transition: all 0.7s;
+  transition: 0.7s;
  
  
 }
@@ -122,5 +147,27 @@
 
 }
 
+.container .card .imgtxt{
 
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 20px 25px;
+  opacity: 1;
+  transition: 0.9 ease-in-out;
+  
+}
 
+.container .card .imgtxt p{
+  color: white;
+background:rgb(189, 0, 116);
+padding: 10px 20px;
+margin: 2px;
+}
+
+.container .card:hover .imgtxt{
+  opacity: 0;
+  transition: 0.9s ease-out;
+}
