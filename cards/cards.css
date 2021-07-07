@@ -16,10 +16,10 @@ body{
     min-height: 100vh;
    
 
-    background-image: url(../media/sky-3154857_1920.jpg);
+    /*background-image: url(../media/sky-3154857_1920.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-    margin: auto;
+    margin: auto;*/
 
    
 }
@@ -271,6 +271,7 @@ header .logo{
         width: 0;
     }
 }
+
 .container .box .content .container1 .skills:nth-child(1) .percent .progress{
     background: linear-gradient(45deg, #36e8ff, #f54dc2);
     }

@@ -4,25 +4,106 @@
 
 
 *{
-    background: #2E2C2F;
+   
     margin: 0;
     padding: 0;
     font-family: 'Oxygen', sans-serif;
-    color: white;
+    color: black;
 }
 
 
 .body{
+
     display: flex;
     justify-content: center;
     align-items: center;
+
 }
 .container{
+
   position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 1100px;
   flex-wrap: wrap;
+  padding: 30px;
+  top: 100px;
+}
 
+.container .card{
+  position: relative;
+  max-width: 400px;
+  height: 215px;
+  
+  margin: 50px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.5);
+  transition: all 0.7s;
+}
+
+.container .card:hover{
+  height: 400px;
+}
+.container .card .imgbx{
+  position: relative;
+  max-width: 450px;
+  height: 260px;
+  top: -80px;
+  z-index: 2;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  
+  
+}
+.container .card .imgbx img{
+ 
+  max-width:400px;
+  max-height: 300px;
+  border-radius: 4px;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+  z-index: 2;
+}
+
+/*.container .card .imgbx img:hover{
+  transform: translate(1rem, -1rem);
+
+}*/
+
+ 
+
+
+.container .card .content{
+  position: relative;
+  margin-top: -140px;
+  padding: 20px;
+  text-align: center;
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.3s ease-in-out;
+}
+.container .card:hover .content{
+  visibility: visible;
+  opacity: 1;
+  margin-top: -40px;
+  transition-delay: 0.3s;
+}
+
+.container .card .content h2{
+  font-size: 3rem;
+  text-transform: uppercase;
+ 
+}
+
+.container .card .content h2:hover{
+ text-transform: lowercase;
+ color: white;
+ background: rgb(32, 32, 32);
+}
+.container .card .content p{
+  margin: 10px 0;
 }
