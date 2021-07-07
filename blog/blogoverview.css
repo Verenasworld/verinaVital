@@ -3,15 +3,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
 
 
+
 *{
    
     margin: 0;
     padding: 0;
     font-family: 'Oxygen', sans-serif;
     color: black;
+    background: white;
 }
 
-
+h3{
+  position: absolut;
+  top: 0;
+  left: 0;
+}
 .body{
 
     display: flex;
@@ -33,46 +39,57 @@
 .container .card{
   position: relative;
   max-width: 400px;
-  height: 215px;
+  height: 300px;
   
-  margin: 50px;
+  margin: 100px 30px;
   padding: 20px;
   display: flex;
   flex-direction: column;
   box-shadow: 0 5px 20px rgba(0,0,0,0.5);
   transition: all 0.7s;
+  background: white;
+ 
 }
 
 .container .card:hover{
-  height: 400px;
+  height: 450px;
 }
 .container .card .imgbx{
   position: relative;
   max-width: 450px;
-  height: 260px;
+  height: 300px;
   top: -80px;
   z-index: 2;
 
   display: flex;
   justify-content: center;
   align-items: center;
+  
 
   
   
 }
 .container .card .imgbx img{
+
  
-  max-width:400px;
+  max-width:300px;
   max-height: 300px;
+ 
   border-radius: 4px;
   box-shadow: 0 5px 20px rgba(0,0,0,0.2);
   z-index: 2;
+  
 }
 
-/*.container .card .imgbx img:hover{
+.container .card .imgbx img:hover{
   transform: translate(1rem, -1rem);
+  transition: 0.9s;
+  border-radius: 10px 0 20px 0;
+  border-left: 10px  solid rgb(189, 0, 116);
+  border-bottom: 20px solid rgb(189, 0, 116);
+  
 
-}*/
+}
 
  
 
@@ -85,6 +102,7 @@
   visibility: hidden;
   opacity: 0;
   transition: 0.3s ease-in-out;
+ 
 }
 .container .card:hover .content{
   visibility: visible;
@@ -107,3 +125,7 @@
 .container .card .content p{
   margin: 10px 0;
 }
+
+
+
+
