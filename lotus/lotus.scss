@@ -1,0 +1,342 @@
+$white: #fff;
+$blue: #b3e5fc;
+$dblue: #26c6da;
+$lteal: #00bcd4;
+$dteal: #002664;
+$purple: #6a1b9a;
+$purple-dark: #4d1470;
+$purple-light: #b24af3;
+$green: #103a35;
+$pink: #c5f062;
+
+body {
+  background: linear-gradient($dblue 25%, $blue 50%, $lteal 50%, $dteal);
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+}
+
+.ripple {
+  position: absolute;
+  align-self: center;
+  justify-self: center;
+  border-bottom: 5px solid white;
+  border-radius: 50%;
+  animation: rp 10s 4s ease-out infinite;
+}
+.r2 {
+  animation-delay: 9s;
+}
+
+.lotus {
+  position: relative;
+  align-self: center;
+  justify-self: center;
+  width: 300px;
+  height: 300px;
+  -webkit-box-reflect: below -250px linear-gradient(rgba(0, 0, 0, 0.05) 50%, rgba(0, 0, 0, 0.25));
+  animation: wobble 5s 5s linear infinite;
+}
+.petal {
+  background: $purple;
+  width: 100px;
+  height: 100px;
+  opacity: 80%;
+  position: absolute;
+  border-radius: 0% 90% 0% 90% / 0% 90% 0% 90%;
+  box-shadow: 10px 10px 10px $purple-light;
+  left: 50%;
+  margin-left: -100px;
+  top: 50%;
+  margin-top: -100px;
+}
+.p1 {
+background: #4d1470;
+  transform-origin: bottom right;
+  animation: pt1 5s;
+  animation-fill-mode: forwards;
+}
+.p2 {
+  transform-origin: bottom right;
+  animation: pt2 5s;
+  animation-fill-mode: forwards;
+}
+.p3 {
+  transform-origin: bottom right;
+  animation: pt3 5s;
+  animation-fill-mode: forwards;
+}
+.p4 {
+  background: linear-gradient($purple-light 25%, $purple 50%);
+  transform-origin: bottom right;
+  animation: pt4 5s;
+  animation-fill-mode: forwards;
+}
+.p5 {
+ 
+  transform-origin: bottom right;
+  animation: pt5 5s;
+  animation-fill-mode: forwards;
+}
+.p6 {
+  transform-origin: bottom right;
+  animation: pt6 5s;
+  animation-fill-mode: forwards;
+}
+.p7 {
+  background: #4d1470;
+  transform-origin: bottom right;
+  animation: pt7 5s;
+  animation-fill-mode: forwards;
+}
+.leaf {
+  width: 100px;
+  height: 100px;
+  background: $green;
+  position: absolute;
+  border-radius: 0% 90% 0% 90% / 0% 90% 0% 90%;
+  left: 50%;
+  margin-left: -100px;
+  top: 50%;
+  margin-top: -100px;
+}
+.l1 {
+  transform-origin: bottom right;
+  animation: lf1 5s;
+  animation-fill-mode: forwards;
+}
+.l2 {
+  transform-origin: bottom right;
+  animation: lf2 5s;
+  animation-fill-mode: forwards;
+}
+.center {
+  background: $green;
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  border-radius: 50%;
+  left: 50%;
+  margin-left: -25px;
+  top: 50%;
+  margin-top: -25px;
+  animation: c 8s;
+  animation-fill-mode: forwards;
+ 
+}
+
+.magic {
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: $pink;
+  box-shadow: 0 0 5px 3px $pink;
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  margin-left: -2px;
+}
+
+.m1 {
+  opacity: 0;
+  animation: fadein 5s 2s ease infinite, floatup 5s 2s ease infinite,
+    left 5s 2s ease infinite;
+}
+.m2 {
+  opacity: 0;
+  animation: fadein 5s 2.5s ease infinite, floatup 5s 2.5s ease infinite,
+    right 5s 2.5s ease infinite;
+}
+.m3 {
+  opacity: 0;
+  animation: fadein 5s 3s ease infinite, floatup 5s 3s ease infinite,
+    farleft 5s 3s ease infinite;
+}
+.m4 {
+  opacity: 0;
+  animation: fadein 5s 3.5s ease infinite, floatup 5s 3.5s ease infinite,
+    farright 5s 3.5s ease infinite;
+}
+.m5 {
+  opacity: 0;
+  animation: fadein 5s 4s linear infinite, floatup 5s 4s linear infinite;
+}
+.m6 {
+  opacity: 0;
+  animation: fadein 5s 4.5s ease infinite, floatup 5s 4.5s ease infinite,
+    left 5s 4.5s ease infinite;
+}
+.m7 {
+  opacity: 0;
+  animation: fadein 5s 5s ease infinite, floatup 5s 5s ease infinite,
+    right 5s 5s ease infinite;
+}
+
+@keyframes pt1 {
+  0% {
+    transform: rotate(45deg) scale(0);
+  }
+  100% {
+    transform: rotate(-30deg) scale(1);
+  }
+}
+@keyframes pt2 {
+  0% {
+    transform: rotate(45deg) scale(0);
+  }
+  100% {
+    transform: rotate(-5deg) scale(1);
+  }
+}
+@keyframes pt3 {
+  0% {
+    transform: rotate(45deg) scale(0);
+  }
+  100% {
+    transform: rotate(20deg) scale(1);
+  }
+}
+@keyframes pt4 {
+  0% {
+    transform: rotate(45deg) scale(0);
+  }
+  100% {
+    transform: rotate(45deg) scale(1);
+  }
+}
+@keyframes pt5 {
+  0% {
+    transform: rotate(45deg) scale(0);
+  }
+  100% {
+    transform: rotate(70deg) scale(1);
+  }
+}
+@keyframes pt6 {
+  0% {
+    transform: rotate(45deg) scale(0);
+  }
+  100% {
+    transform: rotate(95deg) scale(1);
+  }
+}
+@keyframes pt7 {
+  0% {
+    transform: rotate(45deg) scale(0);
+  }
+  100% {
+    transform: rotate(120deg) scale(1);
+  }
+}
+@keyframes lf1 {
+  0% {
+    transform: rotate(45deg) scale(0);
+  }
+  100% {
+    transform: rotate(-45deg) scale(1);
+  }
+}
+@keyframes lf2 {
+  0% {
+    transform: rotate(45deg) scale(0);
+  }
+  100% {
+    transform: rotate(135deg) scale(1);
+  }
+}
+@keyframes c {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes fadein {
+  0%,
+  100% {
+    opacity: 0;
+  }
+  75% {
+    opacity: 100%;
+  }
+}
+
+@keyframes floatup {
+  0% {
+    top: 50px;
+  }
+  100% {
+    top: -100px;
+  }
+}
+@keyframes left {
+  0% {
+    left: 150px;
+  }
+  100% {
+    left: 50px;
+  }
+}
+@keyframes right {
+  0% {
+    left: 150px;
+  }
+  100% {
+    left: 250px;
+  }
+}
+@keyframes farleft {
+  0% {
+    left: 150px;
+  }
+  100% {
+    left: 0px;
+  }
+}
+@keyframes farright {
+  0% {
+    left: 150px;
+  }
+  100% {
+    left: 300px;
+  }
+}
+
+@keyframes rp {
+  0% {
+    width: 0;
+    height: 0;
+    opacity: 0;
+    //left: 50%;
+    margin: 0;
+    //top: 50%;
+  }
+  50% {
+    opacity: 25%;
+  }
+  100% {
+    opacity: 0;
+    width: 500px;
+    height: 250px;
+  }
+}
+
+@keyframes wobble {
+  0%,
+  50%,
+  100% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(1deg);
+  }
+  75% {
+    transform: rotate(-1deg);
+  }
+}
+
