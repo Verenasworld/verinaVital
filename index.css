@@ -1,312 +1,287 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:200,300,400,500,600,700,800,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap");
 
-@import url('https://fonts.googleapis.com/css2?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
-
-*{
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    font-family: 'Poppins', sans-serif;
-
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
 }
 
-section{
-    position: relative;
-    width: 100%;
-    min-height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden;
+section {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
 }
 
-
-header{
-    
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    padding: 40px 100px ;
-    display: flex;
-    justify-content: space-between;
-   align-items: center;
-    z-index: 100;
-
+header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 40px 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 100;
 }
 
-header .logo{
-    font-family: 'Dancing Script', cursive;
-    position: relative;
-    font-size: 4em;
-    color: rgb(255, 255, 255);
+header .logo {
+  font-family: "Dancing Script", cursive;
+  position: relative;
+  font-size: 4em;
+  color: rgb(255, 255, 255);
 
-    font-weight: 700;
-    text-decoration: none;
-    text-shadow: 2px 2px 0 rgba(0,0,0,0.1);
-    transition: 0.5s;
-    text-decoration-line: underline;
-   
+  font-weight: 700;
+  text-decoration: none;
+  text-shadow: 2px 2px 0 rgba(0, 0, 0, 0.1);
+  transition: 0.5s;
+  text-decoration-line: underline;
 }
 
 header .toggle {
- 
- position: relative;
+  position: relative;
 
- width: 40px;
- height: 40px;
- background: url(media/menu.png);
- background-position: center;
- background-repeat: no-repeat;
- cursor: pointer;
- background-size: 45px;
- display: flex;
- justify-content: center;
- align-items: center;
+  width: 40px;
+  height: 40px;
+  background: url(media/menu.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  background-size: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-header .toggle.active{
-    background: url(media/close.png);
-    background-position: center;
-    background-repeat: no-repeat;
-    cursor: pointer;
-    background-size: 45px;
-}
-
-header .toggle:before{
-    content: '';
-    position: absolute;
-    color: white;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    right: 45px;
-    font-size: 20px;
-    padding: 2px 5px;
-}
-header .toggle.toggle.active:before{
-    content: '';
+header .toggle.active {
+  background: url(media/close.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  background-size: 45px;
 }
 
-
-section .overlay{
-    width: 100%;
-    height: 100%;
-    background: rgba(255,255,255,0.2);
-    opacity: 0.5;
-    z-index: 1;
-    position: absolute;
+header .toggle:before {
+  content: "";
+  position: absolute;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  right: 45px;
+  font-size: 20px;
+  padding: 2px 5px;
 }
-section video{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    }
-
-.glass{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 20%;
-    height: 100%;
-    z-index: 1;
-    backdrop-filter: blur(10px);
-    transition: 0.5s;
-    transition-delay: 1s;
-}
-section.active .glass{
-    width: 100%;
-    backdrop-filter: blur(15px);
-    transition-delay: 0s;
-    box-shadow: rgba(0,0,0,0.7);
+header .toggle.toggle.active:before {
+  content: "";
 }
 
-section .content{
-    position: relative;
-    z-index: 10;
-    text-align: center;
-    transition: 0.5s;
-    transition-delay: 1s;
+section .overlay {
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.2);
+  opacity: 0.5;
+  z-index: 1;
+  position: absolute;
 }
-section.active .content{
-  opacity: 0;  
-  visibility:hidden;
+section video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.glass {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 20%;
+  height: 100%;
+  z-index: 1;
+  backdrop-filter: blur(10px);
+  transition: 0.5s;
+  transition-delay: 1s;
+}
+section.active .glass {
+  width: 100%;
+  backdrop-filter: blur(15px);
+  transition-delay: 0s;
+  box-shadow: rgba(0, 0, 0, 0.7);
+}
+
+section .content {
+  position: relative;
+  z-index: 10;
+  text-align: center;
+  transition: 0.5s;
+  transition-delay: 1s;
+}
+section.active .content {
+  opacity: 0;
+  visibility: hidden;
   transform: translateX(-200px);
   transition-delay: 0s;
 }
 
-section .content h2{
-   position: relative;
-   color: white;
-font-size: 12vh;
-line-height: 0.54;
-text-shadow: 0 5px 5px rgba(0,0,0,0.2);
-font-family: 'Dancing Script', cursive;
+section .content h2 {
+  position: relative;
+  color: white;
+  font-size: 12vh;
+  line-height: 0.54;
+  text-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+  font-family: "Dancing Script", cursive;
 }
 
-section .content h2 span a {
-    font-size: 0.2em;
-    font-weight: 300;
-    letter-spacing: 5px;
-    background:rgba(255, 255, 255, 0.5);
-    color: #111;
-    padding: 10px 20px;
-    text-shadow: 0 5px 5px rgba(0,0,0,0.1);
-    box-shadow: 0 5px 5px rgba(0,0,0,0.2);
-    text-transform: uppercase;
-    cursor: pointer;
-    text-decoration: none;
-   
+.content #lotus {
+  position: relative;
+  font-size: 0.2em;
+  font-weight: 300;
+  letter-spacing: 3px;
+  background: rgba(255, 255, 255, 0.5);
+  color: #111;
+  padding: 20px 20px;
+  text-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+  text-transform: uppercase;
+  cursor: pointer;
+  text-decoration: none;
 }
-section .content:hover h2 span a{
-     text-transform: lowercase;
-     transition: 0.5s;
-     color: white;
-     background-color: #111;
-}
-
-
-section .smi{
-position: absolute;
-bottom: 40px;
-right: 100px;
-display: flex;
-z-index: 100;
+#lotus:hover {
+  text-transform: lowercase;
+  transition: 0.5s;
+  color: white;
+  background-color: #111;
 }
 
+section .smi {
+  position: absolute;
+  bottom: 40px;
+  right: 100px;
+  display: flex;
+  z-index: 100;
+}
 
 section.active .smi li {
-    opacity: 0;
-    visibility: hidden;
-    transform: translateY(100px);
-    
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(100px);
 }
 
 section .smi li {
-  
-    list-style: none; 
-    
-    backdrop-filter: blur(10px);
-    transition: 0.5s;
-    transition-delay: calc(0.2s * var(--i));
-    color: #111;
-    cursor: pointer;
-    border-radius: 10px;
-    margin: 5px;
-   
+  list-style: none;
+
+  backdrop-filter: blur(10px);
+  transition: 0.5s;
+  transition-delay: calc(0.2s * var(--i));
+  color: #111;
+  cursor: pointer;
+  border-radius: 10px;
+  margin: 5px;
 }
 
-section .smi li::before{
-    content: attr(data-text);
-    position: absolute;
-    top: 20px;
-    color: rgba(255, 255, 255, 0.2);
-    
-    font-size: 10vw;
-    transform: translate(-100%,-120%);
-    pointer-events: none;
-    font-weight: 700;
-    transition: 0.5s;
-    opacity: 0;
-   
+section .smi li::before {
+  content: attr(data-text);
+  position: absolute;
+  top: 20px;
+  color: rgba(255, 255, 255, 0.2);
+
+  font-size: 10vw;
+  transform: translate(-100%, -120%);
+  pointer-events: none;
+  font-weight: 700;
+  transition: 0.5s;
+  opacity: 0;
 }
 
-section .smi li:hover::before{
-    opacity: 0.8;
-   
-    
+section .smi li:hover::before {
+  opacity: 0.8;
 }
-section .smi li a{
-    background:rgba(255, 255, 255, 0.2);
-    text-decoration: none;
-    color: #111;
-    opacity: 1;
-    font-weight: 200;
-    display: flex;
-    justify-content: center;
-    align-items: center;  
-    font-size: 1.8em;
-    transform-style: preserve-3d;
-    perspective: 500px;
-    width: 80px;
-    height: 80px;
-    border-radius: 10px;
-    transition: background 0.25s ;
-   
+section .smi li a {
+  background: rgba(255, 255, 255, 0.2);
+  text-decoration: none;
+  color: #111;
+  opacity: 1;
+  font-weight: 200;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.8em;
+  transform-style: preserve-3d;
+  perspective: 500px;
+  width: 80px;
+  height: 80px;
+  border-radius: 10px;
+  transition: background 0.25s;
 }
 
-.js-tilt-glare{
-    border-radius: 10px;
-    
+.js-tilt-glare {
+  border-radius: 10px;
 }
 
-section .smi li:nth-child(1) a:hover{
-    background: skyblue;
-    
+section .smi li:nth-child(1) a:hover {
+  background: skyblue;
 }
-section .smi li:nth-child(2) a:hover{
-    background: rgb(255, 56, 222);
+section .smi li:nth-child(2) a:hover {
+  background: rgb(255, 56, 222);
 }
-section .smi li:nth-child(3) a:hover{
-    background: rgb(0, 217, 255);
-}
-
-section .smi li a .fa{
-    transition: 0.25s;
-    pointer-events: none;
+section .smi li:nth-child(3) a:hover {
+  background: rgb(0, 217, 255);
 }
 
-section .smi li a:hover .fa{
-    color: #fff;
-    transform: scale(1.5) translateZ(50px);
+section .smi li a .fa {
+  transition: 0.25s;
+  pointer-events: none;
 }
 
- section .navi{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 100;
-    
+section .smi li a:hover .fa {
+  color: #fff;
+  transform: scale(1.5) translateZ(50px);
+}
+
+section .navi {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 100;
 }
 section .navi li {
-    list-style: none;
-    text-align: center;
-    margin: 15px 0;
-    opacity: 0;
-    visibility: hidden;
-    transition: 0.5s;
-    transform: translateX(200px);
-    transition-delay: calc(0.2s * var(--i));
-    
+  list-style: none;
+  text-align: center;
+  margin: 15px 0;
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.5s;
+  transform: translateX(200px);
+  transition-delay: calc(0.2s * var(--i));
 }
 
-section.active .navi li{
-    opacity: 1;
-    visibility: visible;
-    transform: translateX(0px);
-   
-
+section.active .navi li {
+  opacity: 1;
+  visibility: visible;
+  transform: translateX(0px);
 }
 
 section .navi li a {
-    color: #111;
-    font-size: 2.5em;
-    letter-spacing: 4px;
-    text-decoration: none;
-    text-transform: uppercase;
-    background:rgba(255, 255, 255, 0.7);
-    backdrop-filter: blur(10%);
-    padding: 4px 10px;
-    display: inline-block;
-
-
+  color: #111;
+  font-size: 2.5em;
+  letter-spacing: 4px;
+  text-decoration: none;
+  text-transform: uppercase;
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(10%);
+  padding: 4px 10px;
+  display: inline-block;
 }
 
-section .navi li a:hover{
-    background-color: #111 ;
-    color: #fff;
-    letter-spacing: 10px;
-    text-transform: lowercase;
+section .navi li a:hover {
+  background-color: #111;
+  color: #fff;
+  letter-spacing: 10px;
+  text-transform: lowercase;
 }
